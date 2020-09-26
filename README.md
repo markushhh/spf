@@ -77,6 +77,10 @@ get_all(file = "SPFmicrodata.xlsx") # download and writes "SPFmicrodata.xlsx" to
 get_prob(file = "prob.xlsx") # download and writes "prob.xlsx" to the disk
 ```
 
+The
+[documentation](https://www.philadelphiafed.org/-/media/research-and-data/real-time-center/survey-of-professional-forecasters/spf-documentation.pdf?la=en)
+is really helpful.
+
 Survey of Professional Forecasters in Europe (ECB)
 --------------------------------------------------
 
