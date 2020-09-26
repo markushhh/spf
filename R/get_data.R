@@ -46,7 +46,7 @@ get_individual <- function(survey, file, row.names = FALSE, ...) {
 
   df <- df %>% dplyr::mutate_at(dplyr::vars(dplyr::starts_with(survey)), as.numeric)
   if (!missing(file)) {
-    utils::write.csv(df, file = file, ...)
+    utils::write.csv(df, file = file, row.names, ...)
   }
   return(df)
 }
@@ -77,7 +77,7 @@ get_mean <- function(survey, type = "level", file, row.names = FALSE, ...) {
 
   df <- df %>% dplyr::mutate_at(dplyr::vars(dplyr::starts_with(survey)), as.numeric)
   if (!missing(file)) {
-    utils::write.csv(df, file = file, ...)
+    utils::write.csv(df, file = file, row.names, ...)
   }
   return(df)
 }
@@ -105,7 +105,7 @@ get_median <- function(survey, type = "level", file, row.names = FALSE, ...) {
 
   df <- df %>% dplyr::mutate_at(dplyr::vars(dplyr::starts_with(survey)), as.numeric)
   if (!missing(file)) {
-    utils::write.csv(df, file = file, ...)
+    utils::write.csv(df, file = file, row.names, ...)
   }
   return(df)
 }
@@ -128,7 +128,7 @@ get_dispersion <- function(survey, file, row.names = FALSE, ...) {
   df$`Survey_Date(T)` <- tsibble::yearquarter(df$`Survey_Date(T)`)
 
   if (!missing(file)) {
-    utils::write.csv(df, file = file, ...)
+    utils::write.csv(df, file = file, row.names, ...)
   }
   return(df)
 }
