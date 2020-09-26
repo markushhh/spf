@@ -5,14 +5,16 @@
 \alias{dispersion.data.frame}
 \title{Calculate Cross-Sectional Dispersion Measures}
 \usage{
-dispersion(df, method)
+dispersion(df, method, na.rm)
 
-\method{dispersion}{data.frame}(df, method = IQR)
+\method{dispersion}{data.frame}(df, method = IQR, na.rm = TRUE)
 }
 \arguments{
 \item{df}{a \code{data.frame} holding the SPF data.}
 
 \item{method}{a function specifying the dispersion measure, e.g. \code{IQR}, \code{sd}.}
+
+\item{na.rm}{\code{logical}, indicating whether missing values should be removed.}
 }
 \value{
 a \code{tsibble}

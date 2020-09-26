@@ -22,17 +22,22 @@ Examples
 --------
 
 ``` r
-get_individual("EMP")
-get_mean("RGDP", type = "level")
-get_mean("RGDP", type = "growth")
-get_mean("RGDP", type = "pct")
-get_mean("EMP", type = "level")
-get_mean("EMP", type = "pct")
-get_mean("EMP", type = "ave")
-get_median("EMP", type = "level")
-get_median("EMP", type = "pct")
-get_median("EMP", type = "ave")
-get_dispersion("EMP")
+df <- get_individual("EMP")
+df <- get_mean("RGDP", type = "level")
+df <- get_mean("RGDP", type = "growth")
+df <- get_mean("RGDP", type = "pct")
+df <- get_mean("EMP", type = "level")
+df <- get_mean("EMP", type = "pct")
+df <- get_mean("EMP", type = "ave")
+df <- get_median("EMP", type = "level")
+df <- get_median("EMP", type = "pct")
+df <- get_median("EMP", type = "ave")
+df <- get_dispersion("EMP")
+df <- get_anxious_index()
+df <- get_inflation()
+df <- get_additional_cpie10()
+get_all(file = "SPFmicrodata.xlsx") # download and writes "SPFmicrodata.xlsx" to the disk
+get_prob(file = "prob.xlsx") # download and writes "prob.xlsx" to the disk
 ```
 
 Survey of Professional Forecasters in Europe (ECB)
