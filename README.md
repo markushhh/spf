@@ -39,7 +39,7 @@ Survey of Professional Forecasters in Europe (ECB)
 --------------------------------------------------
 
 For the survey of professional forecasters in Europe, visit the [ECB’s
-Datawarehouse](https://sdw.ecb.europa.eu/browse.do?node=9691152) The R
+Data Warehouse](https://sdw.ecb.europa.eu/browse.do?node=9691152) The R
 package [ecb](https://github.com/expersso/ecb) may be useful.
 
 Code of Conduct
