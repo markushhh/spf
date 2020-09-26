@@ -6,9 +6,10 @@ spf <a href='https://github.com/markushhh/spf'><img src='man/figures/sticker.png
 <!-- badges: start -->
 <!-- badges: end -->
 
-`spf` offers the possibility to download data from the Survey of
-Professional Forecasters (SPF) provided by the Federal Reserve Bank of
-Philadelphia.
+`spf` offers the possibility to download data from the S[urvey of
+Professional
+Forecasters](https://www.philadelphiafed.org/research-and-data/real-time-center/survey-of-professional-forecasters/data-files)
+(SPF) provided by the Federal Reserve Bank of Philadelphia.
 
 Installation
 ------------
