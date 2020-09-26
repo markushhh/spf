@@ -1,7 +1,7 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-spf
-===
+spf <a href='https://github.com/markushhh/spf'><img src='man/figures/sticker.png' align="right" height="138.5" /></a>
+=====================================================================================================================
 
 <!-- badges: start -->
 <!-- badges: end -->
