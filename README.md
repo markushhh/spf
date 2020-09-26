@@ -35,9 +35,22 @@ get_median("EMP", type = "ave")
 get_dispersion("EMP")
 ```
 
+Survey of Professional Forecasters in Europe (ECB)
+--------------------------------------------------
+
+For the survey of professional forecasters in Europe, visit the [ECB’s
+Datawarehouse](https://sdw.ecb.europa.eu/browse.do?node=9691152) The R
+package [ecb](https://github.com/expersso/ecb) may be useful.
+
 Code of Conduct
 ---------------
 
 Please note that the spf project is released with a [Contributor Code of
 Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.
+
+Disclaimer
+----------
+
+This package is in no way officially related to, or endorsed by, the
+Federal Reserve Bank of Philadelphia nor the European Central Bank.
