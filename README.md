@@ -60,6 +60,14 @@ tail(df)
 ```
 
 ``` r
+df %>%
+  ggplot() +
+  geom_line(aes(YEARQUARTER, RGDP1), col = "steelblue")
+```
+
+<img src="man/figures/README-unnamed-chunk-16-1.png" width="100%" />
+
+``` r
 df <- get_mean("RGDP", type = "level")
 df <- get_mean("RGDP", type = "growth")
 df <- get_mean("RGDP", type = "pct")
@@ -73,7 +81,7 @@ df <- get_dispersion("EMP")
 df <- get_anxious_index()
 df <- get_inflation()
 df <- get_additional_cpie10()
-get_all(file = "SPFmicrodata.xlsx") # download and writes "SPFmicrodata.xlsx" to the disk
+get_microdata(file = "SPFmicrodata.xlsx") # download and writes "SPFmicrodata.xlsx" to the disk
 get_prob(file = "prob.xlsx") # download and writes "prob.xlsx" to the disk
 ```
 
