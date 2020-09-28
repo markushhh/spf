@@ -54,7 +54,7 @@ df %>%
   geom_line(aes(YEARQUARTER, NGDP1), col = "steelblue")
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="40%" />
+<img src="man/figures/README-df-1.png" width="40%" />
 
 ``` r
 df <- get_mean("RGDP", type = "level")
