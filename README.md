@@ -18,6 +18,10 @@ Installation
 devtools::install_github("markushhh/spf")
 ```
 
+``` r
+library("spf")
+```
+
 Examples
 --------
 
@@ -47,9 +51,10 @@ tail(df)
 
 ``` r
 library("ggplot2")
+library("tsibble")
 
 df %>%
-  dispersion(f = mean) %>% 
+  summarize_group(f = mean, na.rm = TRUE) %>% 
   ggplot() +
   geom_line(aes(YEARQUARTER, NGDP1), col = "steelblue")
 ```
@@ -89,8 +94,8 @@ Code of Conduct
 ---------------
 
 Please note that the spf project is released with a [Contributor Code of
-Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
-By contributing to this project, you agree to abide by its terms.
+Conduct](https://github.com/markushhh/spf/CODE_OF_CONDUCT.md). By
+contributing to this project, you agree to abide by its terms.
 
 Disclaimer
 ----------
