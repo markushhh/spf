@@ -21,7 +21,7 @@ get_median <- function(survey, type = "level", file, row.names = FALSE, ...) {
 
   df <- df %>% dplyr::mutate_at(dplyr::vars(dplyr::starts_with(survey)), as.numeric)
   if (!missing(file)) {
-    utils::write.csv(df, file = file, row.names, ...)
+    utils::write.csv(df, file = file, row.names = row.names, ...)
   }
   return(df)
 }

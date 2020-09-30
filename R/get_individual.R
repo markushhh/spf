@@ -24,6 +24,7 @@
 #' @importFrom stats IQR
 #' @export
 get_individual <- function(survey, file, row.names = FALSE, ...) {
+
   YEARQUARTER <- NULL
   url <- url_individual(survey)
 
@@ -46,7 +47,7 @@ get_individual <- function(survey, file, row.names = FALSE, ...) {
 
   df <- df %>% dplyr::mutate_at(dplyr::vars(dplyr::starts_with(survey)), as.numeric)
   if (!missing(file)) {
-    utils::write.csv(df, file = file, row.names = row.names)
+    utils::write.csv(df, file = file, row.names = row.names, ...)
   }
   return(df)
 }

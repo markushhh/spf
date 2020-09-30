@@ -17,7 +17,7 @@ get_anxious_index <- function(file, row.names = FALSE, ...) {
   df <- df[, -c(2:3)]
 
   if (!missing(file)) {
-    utils::write.csv(df, file = file, row.names, ...)
+    utils::write.csv(df, file = file, row.names = row.names, ...)
   }
 
   return(df)

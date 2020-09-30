@@ -21,7 +21,7 @@ get_additional_cpie10 <- function(file, row.names = FALSE, ...) {
   df <- df[, -2]
 
   if (!missing(file)) {
-    utils::write.csv(df, file = file, row.names, ...)
+    utils::write.csv(df, file = file, row.names = row.names, ...)
   }
 
   return(df)
