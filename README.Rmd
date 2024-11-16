@@ -26,6 +26,7 @@ knitr::opts_chunk$set(
 
 ```r
 devtools::install_github("markushhh/spf")
+pak::pak("markushhh/spf")
 ```
 
 ```{r}
